@@ -1,0 +1,29 @@
+.contact-icons a {
+    margin: 0 15px;
+    font-size: 28px;
+    transition: transform 0.3s ease, color 0.3s ease;
+    color: #ffffff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+}
+
+.contact-icons a:hover {
+    transform: scale(1.2);
+    color: #f1c40f;
+}
+
+.bilibili-icon svg {
+    width: 28px;
+    height: 28px;
+    vertical-align: middle;
+    margin-bottom: 4px;
+}
+
+.fa-bilibili:before {
+    content: "B站";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+}

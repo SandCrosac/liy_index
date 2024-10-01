@@ -1,0 +1,45 @@
+/* 为可点击的文字添加下划线动画 */
+.underline-animation {
+    position: relative;
+    text-decoration: none;
+}
+
+.underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 7px; /* 增加线条粗细 */
+    bottom: -2px;
+    left: 10%; /* 调整起始点 */
+    right: 10%; /* 调整终止点 */
+    background-color: currentColor;
+    transition: width 0.3s ease-in-out;
+    border-radius: 1.5px; /* 添加圆角 */
+}
+
+.underline-animation:hover::after {
+    width: 75%; /* 调整宽度以匹配新的起始和终止点 */
+}
+
+/* 为气泡导航添加特殊的下划线动画 */
+.bubble.underline-animation {
+    position: relative;
+    text-decoration: none;
+}
+
+.bubble.underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    bottom: 5px;
+    left: 10%;
+    right: 10%;
+    background-color: #7b23ffe8;
+    transition: width 0.3s ease-in-out;
+    border-radius: 1.5px;
+}
+
+.bubble.underline-animation:hover::after {
+    width: 80%;
+}

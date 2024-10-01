@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <!-- 添加图标库，这里使用Font Awesome作为示例 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- 删除之前添加的 Press Start 2P 字体 -->
+    <!-- 其他链接保持不变 -->
+
+    <!-- 添加以下行来导入 YanShiQiuHongKai-2 字体 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=YanShiQiuHongKai-2&display=swap">
+</head>
+<body>
+    <!-- 删除以下顶部导航栏代码 -->
+    <!-- <nav class="top-nav">
+        <ul>
+            <li><a href="#home" class="active">首页</a></li>
+            <li><a href="#about">关于我</a></li>
+            <li><a href="#resources">资源分享</a></li>
+            <li><a href="#other">其他</a></li>
+        </ul>
+    </nav> -->
+
+    <div class="profile-container">
+        <div class="profile-left">
+            <img src="path/to/your/avatar.jpg" alt="个人头像" class="avatar">
+            <div class="profile-info">
+                <h1>您的昵称</h1>
+                <p><a href="#about">关于我</a></p>
+                <p><a href="#resources">资源分享</a></p>
+            </div>
+        </div>
+        <div class="profile-right">
+            <div class="clock-container">
+                <div class="clock">
+                    <div class="hand hour-hand"></div>
+                    <div class="hand minute-hand"></div>
+                    <div class="hand second-hand"></div>
+                    <div class="center-dot"></div>
+                    <div class="number number1">1</div>
+                    <div class="number number2">2</div>
+                    <div class="number number3">3</div>
+                    <div class="number number4">4</div>
+                    <div class="number number5">5</div>
+                    <div class="number number6">6</div>
+                    <div class="number number7">7</div>
+                    <div class="number number8">8</div>
+                    <div class="number number9">9</div>
+                    <div class="number number10">10</div>
+                    <div class="number number11">11</div>
+                    <div class="number number12">12</div>
+                </div>
+            </div>
+            <div class="quote-container">
+                <p id="quote"></p>
+                <p id="author"></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <header>
+            <nav class="bubble-nav">
+                <a href="#photos" class="bubble underline-animation">照片展示</a>
+                <a href="#resources" class="bubble underline-animation">文件资源</a>
+                <a href="#about" class="bubble underline-animation">关于我</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <h2>首页</h2>
+                <!-- 在这里添加首页内容 -->
+            </section>
+
+            <section id="photos">
+                <h2>照片展示</h2>
+                <!-- 在这里添加照片展示的内容 -->
+            </section>
+
+            <section id="resources">
+                <h2>文件资源</h2>
+                <!-- 在这里添加文件资源的内容 -->
+            </section>
+
+            <section id="about">
+                <h2>关于我</h2>
+                <!-- 在这里添加关于您的内容 -->
+            </section>
+
+            <section id="other">
+                <h2>其他</h2>
+                <!-- 在这里添加其他内容 -->
+            </section>
+        </main>
+
+        <footer>
+            <div class="contact-icons">
+                <a href="tencent://message/?uin=你的QQ号码" target="_blank"><i class="fab fa-qq"></i></a>
+                <a href="mailto:your.email@example.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                <a href="https://github.com/yourusername" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://space.bilibili.com/你的哔哩哔哩ID" target="_blank" class="bilibili-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor" width="1em" height="1em">
+                        <path d="M17.813 4.653h.854c1.51.054 2.769.578 3.773 1.574 1.004.995 1.524 2.249 1.56 3.76v7.36c-.036 1.51-.556 2.769-1.56 3.773s-2.262 1.524-3.773 1.56H5.333c-1.51-.036-2.769-.556-3.773-1.56S.036 18.858 0 17.347v-7.36c.036-1.511.556-2.765 1.56-3.76 1.004-.996 2.262-1.52 3.773-1.574h.774l-1.174-1.12a1.234 1.234 0 0 1-.373-.906c0-.356.124-.658.373-.907l.027-.027c.267-.249.573-.373.92-.373.347 0 .653.124.92.373L9.653 4.44c.071.071.134.142.187.213h4.267a.836.836 0 0 1 .16-.213l2.853-2.747c.267-.249.573-.373.92-.373.347 0 .662.151.929.4.267.249.391.551.391.907 0 .355-.124.657-.373.906zM5.333 7.24c-.746.018-1.373.276-1.88.773-.506.498-.769 1.13-.786 1.894v7.52c.017.764.28 1.395.786 1.893.507.498 1.134.756 1.88.773h13.334c.746-.017 1.373-.275 1.88-.773.506-.498.769-1.129.786-1.893v-7.52c.017-.765-.28-1.396-.786-1.894-.507-.497-1.134-.755-1.88-.773zM8 11.107c.373 0 .684.124 .933.373 .25.249 .383.569 .4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c0-.373.129-.689.386-.947.258-.257.574-.386.947-.386zm8 0c.373 0 .684.124 .933.373 .25.249 .383.569 .4.96v1.173c-.017.391-.15.711-.4.96-.249.25-.56.374-.933.374s-.684-.125-.933-.374c-.25-.249-.383-.569-.4-.96V12.44c.017-.391.15-.711.4-.96.249-.249.56-.374.933-.374Z"/>
+                    </svg>
+                </a>
+            </div>
+            <p>&copy; 2024 liy. 保留所有权利。</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+    <!-- 在 </body> 标签前添加以下 script 标签 -->
+    <script>
+    function setClock() {
+        const now = new Date();
+        const beijingTime = new Date(now.getTime() + (now.getTimezoneOffset() + 480) * 60000);
+        const seconds = beijingTime.getSeconds();
+        const minutes = beijingTime.getMinutes();
+        const hours = beijingTime.getHours();
+        
+        const secondDegrees = (seconds / 60) * 360;
+        const minuteDegrees = ((minutes + seconds / 60) / 60) * 360;
+        const hourDegrees = ((hours % 12 + minutes / 60) / 12) * 360;
+
+        document.querySelector('.second-hand').style.transform = `rotate(${secondDegrees}deg)`;
+        document.querySelector('.minute-hand').style.transform = `rotate(${minuteDegrees}deg)`;
+        document.querySelector('.hour-hand').style.transform = `rotate(${hourDegrees}deg)`;
+    }
+
+    setInterval(setClock, 1000);
+    setClock(); // 立即设置一次时钟
+
+    // 名言相关的代码
+    const quotes = [
+        { text: "生活中最棒的事就是，明天又是一个全新的日子。", author: "L.M. 蒙哥马利" },
+        { text: "成功不是最终的，失败也不是致命的，重要的是继续前进的勇气。", author: "温斯顿·丘吉尔" },
+        { text: "人生就像骑自行车。要保持平衡，你就必须保持运动。", author: "阿尔伯特·爱因斯坦" },
+        { text: "不要等待机会，而要创造机会。", author: "乔治·萧伯纳" },
+        { text: "最困难的时刻，也是离成功最近的时候。", author: "爱迪生" }
+    ];
+
+    function setRandomQuote() {
+        const randomIndex = Math.floor(Math.random() * quotes.length);
+        const quote = quotes[randomIndex];
+        document.getElementById('quote').textContent = `"${quote.text}"`;
+        document.getElementById('author').textContent = `— ${quote.author}`;
+    }
+
+    // 页面加载时设置随机名言
+    window.addEventListener('load', setRandomQuote);
+
+    // 添加以下新代码
+    document.addEventListener('DOMContentLoaded', function() {
+        const modal = document.getElementById("timeModal");
+        const clock = document.querySelector(".clock");
+        const closeBtn = document.querySelector(".close");
+
+        if (clock) {
+            clock.addEventListener('click', function() {
+                if (modal) {
+                    modal.style.display = "block";
+                    setTimeout(() => {
+                        modal.classList.add('show');
+                    }, 10);
+                    updateModalTime();
+                }
+            });
+        }
+
+        if (closeBtn) {
+            closeBtn.addEventListener('click', closeModal);
+        }
+
+        window.addEventListener('click', function(event) {
+            if (event.target == modal) {
+                closeModal();
+            }
+        });
+
+        function closeModal() {
+            modal.classList.remove('show');
+            setTimeout(() => {
+                modal.style.display = "none";
+            }, 300);
+        }
+
+        function updateModalTime() {
+            const now = new Date();
+            const beijingTime = new Date(now.getTime() + (now.getTimezoneOffset() + 480) * 60000);
+            const timeString = beijingTime.toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', hour12: false });
+            const modalTimeElement = document.getElementById('modalTime');
+            if (modalTimeElement) {
+                modalTimeElement.textContent = timeString;
+            }
+        }
+
+        setInterval(updateModalTime, 1000);
+    });
+    </script>
+
+    <!-- 在 <body> 标签内，主要内容之后添加以下代码 -->
+    <div id="timeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>当前北京时间</h2>
+            <div id="modalTime"></div>
+        </div>
+    </div>
+</body>
+</html>
