@@ -20,3 +20,56 @@ body::before {
     filter: blur(10px);
     z-index: -1;
 }
+
+/* 添加响应式设计 */
+@media screen and (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+    }
+
+    .profile-left, .profile-right {
+        width: 100%;
+    }
+
+    .clock-container {
+        margin-top: 20px;
+    }
+
+    .bubble-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .bubble {
+        margin: 5px 0;
+    }
+
+    .main-container {
+        padding: 10px;
+    }
+
+    .contact-icons {
+        justify-content: center;
+    }
+}
+
+/* 为小屏幕设备优化字体大小 */
+@media screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* 确保图片不会溢出容器 */
+img {
+    max-width: 100%;
+    height: auto;
+}
